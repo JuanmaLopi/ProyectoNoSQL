@@ -1,6 +1,6 @@
 # ProyectoNoSQL
 
-Juan Manuel Lopez Rodriguez
-Juan Felipe Zambrano Baeza
-Samuel Patiño Lucumi
-Andres Enriquez
+- Juan Manuel Lopez Rodriguez
+- Juan Felipe Zambrano Baeza
+- Samuel Patiño Lucumi
+- Andres Enriquez
