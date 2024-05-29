@@ -1,0 +1,56 @@
+db.Promocion.insertMany([
+    {
+        "_id": ObjectId("60d5ec70b4d1c91e4f2d1000"),
+        "descripcion": "Descuento del 10% en sudaderas",
+        "ProductosConPromocion": [
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2020")},
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2028")}
+        ]
+    },
+    {
+        "_id": ObjectId("60d5ec70b4d1c91e4f2d1001"),
+        "descripcion": "Descuento del 15% en zapatillas seleccionadas",
+        "ProductosConPromocion": [
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2022")},
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2027")},
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2029")}
+        ]
+    },
+    {
+        "_id": ObjectId("60d5ec70b4d1c91e4f2d1002"),
+        "descripcion": "Descuento del 15% en artículos de Calcetines",
+        "ProductosConPromocion": [
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2023")},
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2026")},
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2034")}
+        ]
+    },
+    {
+        "_id": ObjectId("60d5ec70b4d1c91e4f2d1003"),
+        "descripcion": "Descuento del 20% en Paquetes de Mujer",
+        "ProductosConPromocion": [
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2036")},
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2039")}
+        ]
+    },
+    {
+        "_id": ObjectId("60d5ec70b4d1c91e4f2d1004"),
+        "descripcion": "Descuento del 25% en productos de Niño",
+        "ProductosConPromocion": [
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2026")},
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2027")},
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2031")},
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2032")},
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2037")}
+        ]
+    },
+    {
+        "_id": ObjectId("60d5ec70b4d1c91e4f2d1005"),
+        "descripcion": "Descuento del 30% en camisetas",
+        "ProductosConPromocion": [
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2021")},
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2030")},
+            {"productoId": ObjectId("60d5ec70b4d1c91e4f2d2032")}
+        ]
+    }
+]);

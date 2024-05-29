@@ -1,0 +1,42 @@
+db.Municipio.insertMany([
+    {
+        "_id": 1,
+        "nombre": "Cali"
+    },
+    {
+        "_id": 2,
+        "nombre": "Palmira"
+    },
+    {
+        "_id": 3,
+        "nombre": "Jamundi"
+    },
+    {
+        "_id": 4,
+        "nombre": "Buga"
+    },
+    {
+        "_id": 5,
+        "nombre": "Tulua"
+    },
+    {
+        "_id": 6,
+        "nombre": "Cartago"
+    },
+    {
+        "_id": 7,
+        "nombre": "Jumbo"
+    },
+    {
+        "_id": 8,
+        "nombre": "Candelaria"
+    },
+    {
+        "_id": 9,
+        "nombre": "Andalucia"
+    },
+    {
+        "_id": 10,
+        "nombre": "Bugalagrande"
+    }
+]);

@@ -1,0 +1,386 @@
+db.Usuario.insertMany([
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76c0"),
+        "nombre": "Juan Perez",
+        "correo": "juanperez@gmail.com",
+        "telefono": 316981671,
+        "genero": "H",
+        "edad": 30,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76c1"),
+                "username": "juanperez",
+                "password": "juan123",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76c1"),
+        "nombre": "Ana Garcia",
+        "correo": "ana.garcia@example.com",
+        "telefono": 315667232,
+        "genero": "M",
+        "edad": 35,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76c2"),
+                "username": "anagarcia",
+                "password": "ana456",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76c2"),
+        "nombre": "Carlos Lopez",
+        "correo": "carlos.lopez@example.com",
+        "telefono": 317555087,
+        "genero": "H",
+        "edad": 40,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76c3"),
+                "username": "carloslopez",
+                "password": "carlos789",
+                "rol": "Administrador"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76c3"),
+        "nombre": "Laura Ramirez",
+        "correo": "laura.ramirez@example.com",
+        "telefono": 321490110,
+        "genero": "M",
+        "edad": 28,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76c4"),
+                "username": "lauraramirez",
+                "password": "laura123",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76c4"),
+        "nombre": "Pedro Martinez",
+        "correo": "pedro.martinez@example.com",
+        "telefono": 320456720,
+        "genero": "H",
+        "edad": 32,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76c5"),
+                "username": "pedromartinez",
+                "password": "pedro456",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76c5"),
+        "nombre": "Sofia Hernandez",
+        "correo": "sofia.hernandez@example.com",
+        "telefono": 317666789,
+        "genero": "M",
+        "edad": 25,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76c6"),
+                "username": "sofiahernandez",
+                "password": "sofia789",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76c6"),
+        "nombre": "Diego Sanchez",
+        "correo": "diego.sanchez@example.com",
+        "telefono": 318777543,
+        "genero": "H",
+        "edad": 38,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76c7"),
+                "username": "diegosanchez",
+                "password": "diego123",
+                "rol": "Administrador"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76c7"),
+        "nombre": "Elena Gonzalez",
+        "correo": "elena.gonzalez@example.com",
+        "telefono": 319888123,
+        "genero": "M",
+        "edad": 29,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76c8"),
+                "username": "elenagonzalez",
+                "password": "elena456",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76c8"),
+        "nombre": "Javier Fernandez",
+        "correo": "javier.fernandez@example.com",
+        "telefono": 316999456,
+        "genero": "H",
+        "edad": 45,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76c9"),
+                "username": "javierfernandez",
+                "password": "javier789",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76c9"),
+        "nombre": "Patricia Torres",
+        "correo": "patricia.torres@example.com",
+        "telefono": 314555998,
+        "genero": "M",
+        "edad": 33,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76ca"),
+                "username": "patriciatorres",
+                "password": "patricia123",
+                "rol": "Administrador"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76cb"),
+        "nombre": "Maria Rodriguez",
+        "correo": "maria.rodriguez@example.com",
+        "telefono": 321667232,
+        "genero": "M",
+        "edad": 27,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76cc"),
+                "username": "mariarodriguez",
+                "password": "maria789",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76cc"),
+        "nombre": "Roberto Diaz",
+        "correo": "roberto.diaz@example.com",
+        "telefono": 329555087,
+        "genero": "H",
+        "edad": 31,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76cd"),
+                "username": "robertodiaz",
+                "password": "roberto123",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76cd"),
+        "nombre": "Isabel Sanchez",
+        "correo": "isabel.sanchez@example.com",
+        "telefono": 330490110,
+        "genero": "M",
+        "edad": 29,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76ce"),
+                "username": "isabelsanchez",
+                "password": "isabel456",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76ce"),
+        "nombre": "Alejandro Martin",
+        "correo": "alejandro.martin@example.com",
+        "telefono": 332456720,
+        "genero": "H",
+        "edad": 33,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76cf"),
+                "username": "alejandromartin",
+                "password": "alejandro789",
+                "rol": "Administrador"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76cf"),
+        "nombre": "Natalia Jimenez",
+        "correo": "natalia.jimenez@example.com",
+        "telefono": 333667789,
+        "genero": "M",
+        "edad": 26,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76d0"),
+                "username": "nataliajimenez",
+                "password": "natalia123",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76d0"),
+        "nombre": "Ricardo Ruiz",
+        "correo": "ricardo.ruiz@example.com",
+        "telefono": 334890123,
+        "genero": "H",
+        "edad": 36,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76d1"),
+                "username": "ricardoruiz",
+                "password": "ricardo789",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76d1"),
+        "nombre": "Carmen Gomez",
+        "correo": "carmen.gomez@example.com",
+        "telefono": 335999456,
+        "genero": "M",
+        "edad": 30,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76d2"),
+                "username": "carmengomez",
+                "password": "carmen123",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76d2"),
+        "nombre": "Victor Navarro",
+        "correo": "victor.navarro@example.com",
+        "telefono": 336777123,
+        "genero": "H",
+        "edad": 34,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76d3"),
+                "username": "victornavarro",
+                "password": "victor456",
+                "rol": "Administrador"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76d3"),
+        "nombre": "Monica Suarez",
+        "correo": "monica.suarez@example.com",
+        "telefono": 337888345,
+        "genero": "M",
+        "edad": 28,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76d4"),
+                "username": "monicasuarez",
+                "password": "monica789",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76d4"),
+        "nombre": "David Torres",
+        "correo": "david.torres@example.com",
+        "telefono": 338555998,
+        "genero": "H",
+        "edad": 32,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76d5"),
+                "username": "davidtorres",
+                "password": "david123",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76dc"),
+        "nombre": "Laura Garcia",
+        "correo": "laura.garcia@example.com",
+        "telefono": 340123456,
+        "genero": "M",
+        "edad": 29,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76dd"),
+                "username": "lauragarcia",
+                "password": "laura123",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76dd"),
+        "nombre": "Pablo Alvarez",
+        "correo": "pablo.alvarez@example.com",
+        "telefono": 341234567,
+        "genero": "H",
+        "edad": 32,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76de"),
+                "username": "pabloalvarez",
+                "password": "pablo789",
+                "rol": "Administrador"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76de"),
+        "nombre": "Eva Lopez",
+        "correo": "eva.lopez@example.com",
+        "telefono": 342345678,
+        "genero": "M",
+        "edad": 31,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76df"),
+                "username": "evalopez",
+                "password": "eva456",
+                "rol": "Cliente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("615b89c7e4b088513c7d76df"),
+        "nombre": "Antonio Martinez",
+        "correo": "antonio.martinez@example.com",
+        "telefono": 343456789,
+        "genero": "H",
+        "edad": 33,
+        "Registro": [
+            {
+                "idRegistro": ObjectId("615b8a1ce4b088513c7d76e0"),
+                "username": "antoniomartinez",
+                "password": "antonio789",
+                "rol": "Cliente"
+            }
+        ]
+    }
+]);

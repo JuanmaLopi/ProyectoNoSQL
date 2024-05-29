@@ -1,0 +1,374 @@
+db.Producto.insertMany([
+    {
+        "_id": ObjectId("60d5ec70b4d1c91e4f2d2020"),
+        "precio": 17.50,
+        "nombre": "Sudadera Deportiva",
+        "descripcion": "Sudadera cómoda y ligera para deportes.",
+        "imagen": "sudadera_deportiva.jpg",
+        "tipo": "Articulo",
+        "cantidad": 50,
+        "seccion": "Hombre",
+        "atuendos": "Sudaderas",
+        "tallas": [
+            { "talla": 'M', "cantidadPorTalla": 20 },
+            { "talla": 'L', "cantidadPorTalla": 30 }
+        ],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+	"_id": ObjectId("60d5ec70b4d1c91e4f2d2021"),
+	"precio": 20.50,
+	"nombre": "Camiseta Blanca",
+	"descripcion": "Camiseta Blanca Basica para hombre",
+	"imagen": "camiseta_blanca.jpg",
+	"tipo": "Articulo",
+	"cantidad": 75,
+	"seccion": "Hombre",
+	"atuendos": "Camisetas",
+	"tallas": [
+	    {"talla": 'M',"cantidadPorTalla": 30},
+	    {"talla": 'L',"cantidadPorTalla": 30},
+	    {"talla": 'XL',"cantidadPorTalla": 15}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+    	"_id": ObjectId('60d5ec70b4d1c91e4f2d2022'),
+	"precio": 62.50,
+	"nombre": "Zapatillas para correr",
+	"descripcion": "Zapatillas con suela ajustadora perfectas para Running",
+	"imagen": "zapatillaRunning.jpg",
+	"tipo": "Diseno",
+	"cantidad": 40,
+	"seccion": "Mujer",
+	"atuendos": "Zapatillas",
+	"tallas": [
+	    {"talla": 'XS',"cantidadPorTalla": 10},
+	    {"talla": 'S',"cantidadPorTalla": 20},
+	    {"talla": 'M',"cantidadPorTalla": 10}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+    	"_id": ObjectId('60d5ec70b4d1c91e4f2d2023'),
+	"precio": 12.50,
+	"nombre": "Calcetines Largos",
+	"descripcion": "Calcetines comodos, perfectos para realizar cualquier actividad",
+	"imagen": "calcetines.jpg",
+	"tipo": "Articulo",
+	"cantidad": 100,
+	"seccion": "Mujer",
+	"atuendos": "Calcetines",
+	"tallas": [
+	    {"talla": 'XS',"cantidadPorTalla": 10},
+	    {"talla": 'S',"cantidadPorTalla": 25},
+	    {"talla": 'M',"cantidadPorTalla": 35},
+	    {"talla": 'L',"cantidadPorTalla": 20},
+	    {"talla": 'XL',"cantidadPorTalla": 10}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+    	"_id": ObjectId('60d5ec70b4d1c91e4f2d2024'),
+	"precio": 16.25,
+	"nombre": "Pantaloneta Negra",
+	"descripcion": "Pantaloneta estirable para mayor movilidad",
+	"imagen": "pantaloneta.jpg",
+	"tipo": "Diseno",
+	"cantidad": 60,
+	"seccion": "Hombre",
+	"atuendos": "Pantalonetas",
+	"tallas": [
+	    {"talla": 'S',"cantidadPorTalla": 20},
+	    {"talla": 'M',"cantidadPorTalla": 25},
+	    {"talla": 'L',"cantidadPorTalla": 15}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+    	"_id": ObjectId('60d5ec70b4d1c91e4f2d2025'),
+	"precio": 18.75,
+	"nombre": "Leggins Azules",
+	"descripcion": "Leggins de color azul para mujeres",
+	"imagen": "leggins.jpg",
+	"tipo": "Diseno",
+	"cantidad": 60,
+	"seccion": "Mujer",
+	"atuendos": "Leggins",
+	"tallas": [
+	    {"talla": 'S',"cantidadPorTalla": 15},
+	    {"talla": 'M',"cantidadPorTalla": 25},
+	    {"talla": 'L',"cantidadPorTalla": 20}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+    	"_id": ObjectId('60d5ec70b4d1c91e4f2d2026'),
+	"precio": 7.50,
+	"nombre": "Calcetines para Ninos",
+	"descripcion": "Calcetines con estampado de tus equipos favoritos",
+	"imagen": "calcetines_equipo.jpg",
+	"tipo": "Diseno",
+	"cantidad": 40,
+	"seccion": "Nino",
+	"atuendos": "Calcetines",
+	"tallas": [
+	    {"talla": 'XS',"cantidadPorTalla": 20},
+	    {"talla": 'S',"cantidadPorTalla": 20}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+    	"_id": ObjectId('60d5ec70b4d1c91e4f2d2027'),
+	"precio": 70.50,
+	"nombre": "Zapatillas para Baloncesto",
+	"descripcion": "Zapatillas para ninos amantes del Baloncesto",
+	"imagen": "basketsneackers.jpg",
+	"tipo": "Diseno",
+	"cantidad": 30,
+	"seccion": "Nino",
+	"atuendos": "Zapatillas",
+	"tallas": [
+	    {"talla": 'XS',"cantidadPorTalla": 20},
+	    {"talla": 'S',"cantidadPorTalla": 10}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+    	"_id": ObjectId('60d5ec70b4d1c91e4f2d2028'),
+	"precio": 22.50,
+	"nombre": "Sudadera Gris",
+	"descripcion": "Sudadera perfecta para personas con piernas largas",
+	"imagen": "sudadera_gris.jpg",
+	"tipo": "Articulo",
+	"cantidad": 90,
+	"seccion": "Mujer",
+	"atuendos": "Sudaderas",
+	"tallas": [
+	    {"talla": 'XS',"cantidadPorTalla": 15},
+	    {"talla": 'S',"cantidadPorTalla": 30},
+	    {"talla": 'M',"cantidadPorTalla": 25},
+	    {"talla": 'L',"cantidadPorTalla": 20}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+    	"_id": ObjectId('60d5ec70b4d1c91e4f2d2029'),
+	"precio": 100.50,
+	"nombre": "Zapatillas para Futbol",
+	"descripcion": "Zapatilla Azules para los amantes del futbol",
+	"imagen": "soccer_shoe.jpg",
+	"tipo": "Diseno",
+	"cantidad": 50,
+	"seccion": "Hombre",
+	"atuendos": "Zapatillas",
+	"tallas": [
+	    {"talla": 'M',"cantidadPorTalla": 25},
+	    {"talla": 'L',"cantidadPorTalla": 25}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+    	"_id": ObjectId('60d5ec70b4d1c91e4f2d2030'),
+	"precio": 25.50,
+	"nombre": "Camiseta Negra",
+	"descripcion": "Camiseta color negro para los días de invierno",
+	"imagen": "camiseta_negra.jpg",
+	"tipo": "Articulo",
+	"cantidad": 100,
+	"seccion": "Mujer",
+	"atuendos": "Camisetas",
+	"tallas": [
+	    {"talla": 'S',"cantidadPorTalla": 35},
+	    {"talla": 'M',"cantidadPorTalla": 45},
+	    {"talla": 'L',"cantidadPorTalla": 20}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+    	"_id": ObjectId('60d5ec70b4d1c91e4f2d2031'),
+	"precio": 15.50,
+	"nombre": "Pantaloneta para Nino",
+	"descripcion": "Pantaloneta Gris Básica para ninos",
+	"imagen": "pantaloneta_nino.jpg",
+	"tipo": "Articulo",
+	"cantidad": 45,
+	"seccion": "Nino",
+	"atuendos": "Pantalonetas",
+	"tallas": [
+	    {"talla": 'XS',"cantidadPorTalla": 15},
+	    {"talla": 'S',"cantidadPorTalla": 30}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+    	"_id": ObjectId('60d5ec70b4d1c91e4f2d2032'),
+	"precio": 80.50,
+	"nombre": "Camiseta de Futbol",
+	"descripcion": "Camiseta de Futbol color blanco con el estampado de tu nombre en negro",
+	"imagen": "camiseta_nino.jpg",
+	"tipo": "Diseno",
+	"cantidad": 20,
+	"seccion": "Nino",
+	"atuendos": "Camisetas",
+	"tallas": [
+	    {"talla": 'XS',"cantidadPorTalla": 5},
+	    {"talla": 'S',"cantidadPorTalla": 15}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+    	"_id": ObjectId('60d5ec70b4d1c91e4f2d2033'),
+	"precio": 40.50,
+	"nombre": "Camiseta de Gimnasia",
+	"descripcion": "Camiseta de Gimnasia color negra con el estampado de tu nombre en blanco",
+	"imagen": "camiseta_mujer.jpg",
+	"tipo": "Diseno",
+	"cantidad": 55,
+	"seccion": "Mujer",
+	"atuendos": "Camisetas",
+	"tallas": [
+	    {"talla": 'S',"cantidadPorTalla": 20},
+	    {"talla": 'M',"cantidadPorTalla": 35}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+    	"_id": ObjectId('60d5ec70b4d1c91e4f2d2034'),
+	"precio": 20.50,
+	"nombre": "Calcetines Estampados",
+	"descripcion": "Calcetines estampados con el escudo de tu equipo favorito",
+	"imagen": "calcetines_estampados.jpg",
+	"tipo": "Diseno",
+	"cantidad": 65,
+	"seccion": "Hombre",
+	"atuendos": "Calcetines",
+	"tallas": [
+	    {"talla": 'S',"cantidadPorTalla": 15},
+	    {"talla": 'M',"cantidadPorTalla": 25},
+	    {"talla": 'L',"cantidadPorTalla": 20}
+	],
+        "esPaquete": false,
+        "articulos": []
+    },
+    {
+        "_id": ObjectId('60d5ec70b4d1c91e4f2d2035'),
+        "precio": 32.50,
+        "nombre": "Paquete Deportivo Hombre",
+        "descripcion": "Paquete de sudadera y camiseta blanca deportiva.",
+        "imagen": "paquete_deportivo_hombre.jpg",
+        "tipo": "Articulo",
+        "cantidad": 40,
+        "seccion": "Hombre",
+        "atuendos": "Sudaderas",
+        "tallas": [
+            { "talla": "M", "cantidadPorTalla": 20 },
+            { "talla": "L", "cantidadPorTalla": 20 }
+        ],
+        "esPaquete": true,
+        "articulos": [
+            { "productoId": ObjectId("60d5ec70b4d1c91e4f2d2020") },
+            { "productoId": ObjectId("60d5ec70b4d1c91e4f2d2021") }
+        ],
+    },
+    {
+        "_id": ObjectId('60d5ec70b4d1c91e4f2d2036'),
+        "precio": 35.50,
+        "nombre": "Paquete Deportivo Mujer",
+        "descripcion": "Paquete de zapatillas, leggins y Calcetines para damas.",
+        "imagen": "paquete_deportivo_mujer.jpg",
+        "tipo": "Articulo",
+        "cantidad": 30,
+        "seccion": "Mujer",
+        "atuendos": "Leggins",
+        "tallas": [
+            { "talla": "S", "cantidadPorTalla": 10 },
+            { "talla": "M", "cantidadPorTalla": 10 },
+            { "talla": "L", "cantidadPorTalla": 10 }
+        ],
+        "esPaquete": true,
+        "articulos": [
+            { "productoId": ObjectId("60d5ec70b4d1c91e4f2d2022") },
+            { "productoId": ObjectId("60d5ec70b4d1c91e4f2d2023") },
+	    { "productoId": ObjectId("60d5ec70b4d1c91e4f2d2025") }
+        ]
+    },
+    {
+        "_id": ObjectId('60d5ec70b4d1c91e4f2d2037'),
+        "precio": 30.50,
+        "nombre": "Basketball Kid",
+        "descripcion": "Paquete de pantalonetas, calcetines y zapatillas para ninos.",
+        "imagen": "basketball_kid.jpg",
+        "tipo": "Articulo",
+        "cantidad": 25,
+        "seccion": "Nino",
+        "atuendos": "Pantalonetas",
+        "tallas": [
+            { "talla": "S", "cantidadPorTalla": 10 },
+            { "talla": "M", "cantidadPorTalla": 15 }
+        ],
+        "esPaquete": true,
+        "articulos": [
+            { "productoId": ObjectId("60d5ec70b4d1c91e4f2d2026") },
+            { "productoId": ObjectId("60d5ec70b4d1c91e4f2d2027") },
+	    { "productoId": ObjectId("60d5ec70b4d1c91e4f2d2031") }
+        ]
+    },
+    {
+        "_id": ObjectId('60d5ec70b4d1c91e4f2d2038'),
+        "precio": 50.50,
+        "nombre": "Paquete Gimnasio Hombre",
+        "descripcion": "Paquete de camiseta blanca, zapatillas para correr y calcetines largos.",
+        "imagen": "paquete_gimnasio_hombre.jpg",
+        "tipo": "Articulo",
+        "cantidad": 20,
+        "seccion": "Hombre",
+        "atuendos": "Camisetas",
+        "tallas": [
+            { "talla": "M", "cantidadPorTalla": 10 },
+            { "talla": "L", "cantidadPorTalla": 10 }
+        ],
+        "esPaquete": true,
+        "articulos": [
+            { "productoId": ObjectId('60d5ec70b4d1c91e4f2d2021') },
+            { "productoId": ObjectId('60d5ec70b4d1c91e4f2d2029') },
+            { "productoId": ObjectId('60d5ec70b4d1c91e4f2d2034') }
+        ]
+    },
+    {
+        "_id": ObjectId('60d5ec70b4d1c91e4f2d2039'),
+        "precio": 55.50,
+        "nombre": "Paquete Verano Mujer",
+        "descripcion": "Paquete de camiseta de gimnasia y sudadera gris.",
+        "imagen": "paquete_verano_mujer.jpg",
+        "tipo": "Articulo",
+        "cantidad": 30,
+        "seccion": "Mujer",
+        "atuendos": "Sudaderas",
+        "tallas": [
+            { "talla": "S", "cantidadPorTalla": 10 },
+            { "talla": "M", "cantidadPorTalla": 10 },
+            { "talla": "L", "cantidadPorTalla": 10 }
+        ],
+        "esPaquete": true,
+        "articulos": [
+            { "productoId": ObjectId('60d5ec70b4d1c91e4f2d2033') },
+            { "productoId": ObjectId('60d5ec70b4d1c91e4f2d2028') }
+        ]
+    }
+]
+);

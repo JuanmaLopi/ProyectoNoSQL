@@ -1,0 +1,133 @@
+db.Resena.insertMany([{
+  "_id": ObjectId("615b8b05e4b088513c7d7708"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c0"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2020"),
+  "comentarios": "Este producto es excelente, lo recomiendo totalmente.",
+  "valoraciones": "MuyBuena"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d7709"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c0"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2021"),
+  "comentarios": "No quedé satisfecho con este producto, la calidad es baja.",
+  "valoraciones": "Mala"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d770a"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c1"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2022"),
+  "comentarios": "Me encantó este producto, superó mis expectativas.",
+  "valoraciones": "Buena"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d770b"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c1"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2023"),
+  "comentarios": "El producto llegó en mal estado, no lo recomendaría.",
+  "valoraciones": "Mala"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d770c"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c2"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2024"),
+  "comentarios": "Es un producto promedio, nada especial.",
+  "valoraciones": "Neutra"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d770d"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c2"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2027"),
+  "comentarios": "El producto es excelente, llegó en perfectas condiciones.",
+  "valoraciones": "MuyBuena"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d770e"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c3"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2039"),
+  "comentarios": "No estoy contento con este producto, esperaba más.",
+  "valoraciones": "Mala"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d770f"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c4"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2037"),
+  "comentarios": "Me gustó mucho este producto, lo volvería a comprar.",
+  "valoraciones": "Buena"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d7710"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c4"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2038"),
+  "comentarios": "No es lo que esperaba, la calidad es regular.",
+  "valoraciones": "Neutra"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d7711"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c4"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2036"),
+  "comentarios": "El producto cumplió con mis expectativas, estoy satisfecho.",
+  "valoraciones": "Buena"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d7712"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c5"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2030"),
+  "comentarios": "No recomendaría este producto, la calidad es baja.",
+  "valoraciones": "Mala"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d7713"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c5"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2033"),
+  "comentarios": "Es un producto decente, pero podría ser mejor.",
+  "valoraciones": "Neutra"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d7714"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c6"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2027"),
+  "comentarios": "Me encantó este producto, es justo lo que necesitaba.",
+  "valoraciones": "MuyBuena"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d7715"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c6"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2029"),
+  "comentarios": "El producto llegó a tiempo y en perfecto estado, excelente servicio.",
+  "valoraciones": "Buena"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d7716"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c7"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2020"),
+  "comentarios": "No estoy muy satisfecho con este producto, esperaba más calidad.",
+  "valoraciones": "Neutra"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d7717"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c7"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2027"),
+  "comentarios": "No recomiendo este producto, no cumple con lo prometido.",
+  "valoraciones": "Mala"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d7718"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c7"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2030"),
+  "comentarios": "Es un producto decente, pero podría mejorar en algunos aspectos.",
+  "valoraciones": "Neutra"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d7719"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c8"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2023"),
+  "comentarios": "El producto es excelente, superó mis expectativas.",
+  "valoraciones": "MuyBuena"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d771a"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c8"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2029"),
+  "comentarios": "No quedé satisfecho con este producto, no era lo que esperaba.",
+  "valoraciones": "Mala"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d771b"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c8"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2035"),
+  "comentarios": "Producto de buena calidad, lo recomendaría.",
+  "valoraciones": "Buena"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d771c"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c9"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2028"),
+  "comentarios": "El producto es regular, nada excepcional.",
+  "valoraciones": "Neutra"
+},{
+  "_id": ObjectId("615b8b05e4b088513c7d771d"),
+  "idUsuario": ObjectId("615b89c7e4b088513c7d76c9"),
+  "idProducto": ObjectId("60d5ec70b4d1c91e4f2d2035"),
+  "comentarios": "Estoy contento con este producto, cumple con lo que necesitaba.",
+  "valoraciones": "Buena"
+}]);

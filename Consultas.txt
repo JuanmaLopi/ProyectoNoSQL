@@ -1,0 +1,324 @@
+Consultas:
+1. Productos más Vendidos
+db.Compra.aggregate([
+    {
+        $unwind: "$detallesCompra"
+    },
+    {
+        $group: {
+            _id: "$detallesCompra.productoId",
+            totalVendidos: { $sum: "$detallesCompra.cantidad" }
+        }
+    },
+    {
+        $lookup: {
+            from: "Producto",
+            localField: "_id",
+            foreignField: "_id",
+            as: "producto"
+        }
+    },
+    {
+        $project: {
+            producto: { $arrayElemAt: ["$producto.nombre", 0] },
+            totalVendidos: 1
+        }
+    },
+    {
+        $sort: { totalVendidos: -1 }
+    }
+]);
+
+
+2. Usuarios con Mayor Gasto
+db.Compra.aggregate([
+    {
+        $group: {
+            _id: "$idUsuario",
+            totalGastado: { $sum: "$costoTotal" }
+        }
+    },
+    {
+        $lookup: {
+            from: "Usuario",
+            localField: "_id",
+            foreignField: "_id",
+            as: "usuario"
+        }
+    },
+    {
+        $project: {
+            usuario: { $arrayElemAt: ["$usuario.nombre", 0] },
+            totalGastado: 1
+        }
+    },
+    {
+        $sort: { totalGastado: -1 }
+    }
+]);
+
+
+3. Promociones Aplicadas en Compras
+db.Compra.aggregate([
+    {
+        $unwind: "$detallesCompra"
+    },
+    {
+        $lookup: {
+            from: "Promocion",
+            localField: "detallesCompra.productoId",
+            foreignField: "ProductosConPromocion.productoId",
+            as: "promociones"
+        }
+    },
+    {
+        $match: { "promociones": { $ne: [] } }
+    },
+    {
+        $project: {
+            idUsuario: 1,
+            fechaCompra: 1,
+            costoTotal: 1,
+            "detallesCompra.productoId": 1,
+            "detallesCompra.cantidad": 1,
+            "detallesCompra.valorUnidad": 1,
+            promociones: { $arrayElemAt: ["$promociones.descripcion", 0] }
+        }
+    }
+]);
+
+
+4. Productos con Mayor Número de Reseñas
+db.Resena.aggregate([
+    {
+        $group: {
+            _id: "$idProducto",
+            totalResenas: { $sum: 1 }
+        }
+    },
+    {
+        $lookup: {
+            from: "Producto",
+            localField: "_id",
+            foreignField: "_id",
+            as: "producto"
+        }
+    },
+    {
+        $project: {
+            producto: { $arrayElemAt: ["$producto.nombre", 0] },
+            totalResenas: 1
+        }
+    },
+    {
+        $sort: { totalResenas: -1 }
+    }
+]);
+
+
+5. Usuarios con Mayor Variedad de Compras
+db.Compra.aggregate([
+    {
+        $unwind: "$detallesCompra"
+    },
+    {
+        $group: {
+            _id: {
+                usuario: "$idUsuario",
+                producto: "$detallesCompra.productoId"
+            }
+        }
+    },
+    {
+        $group: {
+            _id: "$_id.usuario",
+            variedadCompras: { $sum: 1 }
+        }
+    },
+    {
+        $lookup: {
+            from: "Usuario",
+            localField: "_id",
+            foreignField: "_id",
+            as: "usuario"
+        }
+    },
+    {
+        $project: {
+            usuario: { $arrayElemAt: ["$usuario.nombre", 0] },
+            variedadCompras: 1
+        }
+    },
+    {
+        $sort: { variedadCompras: -1 }
+    }
+]);
+
+
+6. Análisis de Compras por Género y Sección
+db.Compra.aggregate([
+    {
+        $lookup: {
+            from: "Usuario",
+            localField: "idUsuario",
+            foreignField: "_id",
+            as: "usuario"
+        }
+    },
+    {
+        $unwind: "$usuario"
+    },
+    {
+        $unwind: "$detallesCompra"
+    },
+    {
+        $lookup: {
+            from: "Producto",
+            localField: "detallesCompra.productoId",
+            foreignField: "_id",
+            as: "producto"
+        }
+    },
+    {
+        $unwind: "$producto"
+    },
+    {
+        $group: {
+            _id: {
+                genero: "$usuario.genero",
+                seccion: "$producto.seccion"
+            },
+            totalCompras: { $sum: 1 }
+        }
+    },
+    {
+        $project: {
+            genero: "$_id.genero",
+            seccion: "$_id.seccion",
+            totalCompras: 1
+        }
+    },
+    {
+        $sort: { totalCompras: -1 }
+    }
+]);
+
+
+7. Tallas Más Vendidas por Sección
+db.Compra.aggregate([
+    {
+        $unwind: "$detallesCompra"
+    },
+    {
+        $lookup: {
+            from: "Producto",
+            localField: "detallesCompra.productoId",
+            foreignField: "_id",
+            as: "producto"
+        }
+    },
+    {
+        $unwind: "$producto"
+    },
+    {
+        $unwind: "$producto.tallas"
+    },
+    {
+        $group: {
+            _id: {
+                seccion: "$producto.seccion",
+                talla: "$producto.tallas.talla"
+            },
+            totalVendidos: { $sum: "$detallesCompra.cantidad" }
+        }
+    },
+    {
+        $project: {
+            seccion: "$_id.seccion",
+            talla: "$_id.talla",
+            totalVendidos: 1
+        }
+    },
+    {
+        $sort: { totalVendidos: -1 }
+    }
+]);
+
+
+8. Productos con Mayor Ingreso por Cantidad Vendida
+db.Compra.aggregate([
+    {
+        $unwind: "$detallesCompra"
+    },
+    {
+        $lookup: {
+            from: "Producto",
+            localField: "detallesCompra.productoId",
+            foreignField: "_id",
+            as: "producto"
+        }
+    },
+    {
+        $unwind: "$producto"
+    },
+    {
+        $group: {
+            _id: "$producto._id",
+            nombre: { $first: "$producto.nombre" },
+            totalIngresos: { $sum: { $multiply: ["$detallesCompra.cantidad", "$detallesCompra.valorUnidad"] } },
+            totalVentas: { $sum: "$detallesCompra.cantidad" }
+        }
+    },
+    {
+        $lookup: {
+            from: "Resena",
+            localField: "_id",
+            foreignField: "idProducto",
+            as: "resenas"
+        }
+    },
+    {
+        $unwind: "$resenas"
+    },
+    {
+        $group: {
+            _id: "$_id",
+            nombre: { $first: "$nombre" },
+            totalIngresos: { $first: "$totalIngresos" },
+            totalVentas: { $first: "$totalVentas" },
+        }
+    },
+    {
+        $sort: { totalIngresos: -1}
+    }
+]);
+
+
+9. Número de Compras por Usuario
+db.Compra.aggregate([
+    {
+        $group: {
+            _id: "$idUsuario",
+            totalCompras: { $sum: 1 }
+        }
+    },
+    {
+        $lookup: {
+            from: "Usuario",
+            localField: "_id",
+            foreignField: "_id",
+            as: "usuario"
+        }
+    },
+    {
+        $project: {
+            usuario: { $arrayElemAt: ["$usuario.nombre", 0] },
+            totalCompras: 1
+        }
+    },
+    {
+        $sort: { totalCompras: -1 }
+    }
+]);
+
+
